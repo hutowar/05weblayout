@@ -1,0 +1,199 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  --container-width: 1230px;
+  --container-padding: 15px;
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.about {
+  margin-top: 40px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__logo {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.menu__logo :nth-child(1) {
+  margin-right: 15px;
+}
+.menu_orange {
+  color: #f25822 !important;
+}
+.menu__nav {
+  display: flex;
+  column-gap: 35px;
+  align-items: center;
+}
+.menu__item a {
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+
+  color: #fff;
+
+  background-color: rgb(242, 88, 34);
+  border-radius: 50px;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+}
+.about__content {
+  display: flex;
+  margin-top: 84px;
+  margin-bottom: 200px;
+}
+.about__left {
+  padding: 59px;
+}
+.title-h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+.title-h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.paragraph {
+  color: rgb(102, 102, 102);
+  line-height: 150%;
+  font-weight: 500;
+  font-size: 16px;
+}
+.paragraph_heading {
+  margin-top: 17px;
+  margin-bottom: 37px;
+  font-size: 20px;
+}
+.about__btns {
+  display: flex;
+  align-items: center;
+}
+.about__watch-link {
+  display: flex;
+  margin-left: 27px;
+  align-items: center;
+  column-gap: 15px;
+}
+.about__right {
+}
+.about-companies {
+  display: flex;
+  justify-content: center;
+  column-gap: 48px;
+}
+
+.features {
+  padding: 100px 0;
+}
+.feachures__row {
+  display: flex;
+  justify-content: space-between;
+}
+.feachure-block {
+  width: 310px;
+  padding: 40px 30px 25px 30px;
+  transition: box-shadow .4s;
+}
+.feachure-block:hover {
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+.feachure-block__icon {
+  padding: 21px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.icon_orange{
+  background-color: rgba(242, 88, 34, 0.25);
+}
+.icon_green{
+  background-color: rgba(20, 146, 17, 0.28)
+}
+.icon_yellow{
+  background-color: rgba(255, 205, 29, 0.24);
+}
+.feachure-block-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+.feachure-block_paragraph {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.feachure-block__description-link {
+  font-size: 11px;
+  font-weight: bold;
+}
+.advantages{
+  background-color: rgba(250, 250, 250, 1);
+  text-align: center;
+  padding: 92px 0 100px;
+}
+.advantages_paragraph{
+  max-width: 692px;
+  margin: 19px 0 55px;
+  padding-left: calc(50% - 346px);
+  padding-right: calc(50% - 346px);
+}
+.advantages__row{
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-block{
+  max-width: 370px;
+  background-color: rgb(255, 255, 255);
+  transition: box-shadow .4s;
+}
+.advantages-block:hover {
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+.advantages-block__title{
+  padding-bottom: 22px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.advantages-block_paragraph{
+  padding: 0 30px;
+}
+.advantages_btn{
+  margin: 39px 0 50px 0;
+}
+.advantages_btn{
+  font-weight: bold;
+}
+
+.advantages_btn::after{
+  content: url('./img/advantages/arrow-right.svg');
+  padding-left: 5px;
+  width: 6px;
+  height: 10px;
+}
